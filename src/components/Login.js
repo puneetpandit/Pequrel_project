@@ -54,12 +54,6 @@ const Login = () => {
               onChange={(e) => setPassword(e.target.value)}
             />
           </Form.Group>
-
-          <div className="d-grid gap-2">
-            <Button variant="primary" type="Submit">
-              Log In
-            </Button>
-          </div>
         </Form>
         <hr />
         <div>
@@ -69,6 +63,13 @@ const Login = () => {
             onClick={handleGoogleSignIn}
           />
         </div>
+        <Link to="/phonesignup">
+        <div className="d-grid gap-2 mt-3">
+            <Button variant="secondary" type="Submit">
+              Sign in with phone
+            </Button>
+        </div>
+        </Link>
       </div>
       <div className="p-4 box mt-3 text-center">
         Don't have an account? <Link to="/signup">Sign up</Link>
